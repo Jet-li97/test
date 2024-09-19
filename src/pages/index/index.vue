@@ -1,12 +1,28 @@
 <script setup lang="ts">
-//
+import CusttomNavbar from './components/CusttomNavbar.vue'
+import {onLoad} from "@dcloudio/uni-app"
+import type {BannerItem} from "@/types/home"
+import { ref } from "vue";
+import { getHomeBannerAPI } from "@/services/home";
+import  CategoryItem  from "@/pages/index/components/CategoryPanel.vue";
+const bannerList=ref<BannerItem[]>([])
+const getHomeBannerData=async ()=>{
+  const res =await getHomeBannerAPI()
+  console.log(res,"res");
+  bannerList.value=res.result
+
+}
+onLoad(()=>{
+  getHomeBannerData()
+})
 </script>
 
 <template>
+<CusttomNavbar/>
+<XtxSwiper :list="bannerList"/>
+<CategoryItem />
   <view class="index">
-    <uni-card title="基础卡片" extra="额外信息">
-      <text>这是一个基础卡片示例，此示例展示了一个标题加标题额外信息的标准卡片。</text>
-    </uni-card>
+
   </view>
 </template>
 

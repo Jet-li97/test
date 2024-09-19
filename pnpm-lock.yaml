@@ -90,6 +90,9 @@ importers:
       '@types/node':
         specifier: ^18.11.9
         version: 18.11.10
+      '@types/wechat-miniprogram':
+        specifier: ^3.4.7
+        version: 3.4.7
       '@uni-helper/uni-app-types':
         specifier: ^0.5.8
         version: 0.5.8(typescript@5.1.6)
@@ -1518,6 +1521,9 @@ packages:
 
   '@types/stack-utils@2.0.1':
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
+
+  '@types/wechat-miniprogram@3.4.7':
+    resolution: {integrity: sha512-X6SVOOaTPQN24lYBSV5jLuWyIedx8DGJnT0VUBnoNzJruhxotCL28ecGb7AO5JfXOXtHqSS5+CnJ70NxFxmisA==}
 
   '@types/yargs-parser@21.0.0':
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
@@ -6133,6 +6139,8 @@ snapshots:
   '@types/semver@7.3.13': {}
 
   '@types/stack-utils@2.0.1': {}
+
+  '@types/wechat-miniprogram@3.4.7': {}
 
   '@types/yargs-parser@21.0.0': {}
 

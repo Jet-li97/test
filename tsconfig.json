@@ -1,8 +1,12 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
+  // "noImplicitAny": true,
+  // "suppressImplicitAnyIndexErrors": true,
   "compilerOptions": {
     "allowJs": true,
     "sourceMap": true,
+
+
     "baseUrl": ".",
     "paths": {
       "@/*": [
